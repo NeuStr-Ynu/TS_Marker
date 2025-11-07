@@ -21,10 +21,10 @@
 **时间读取与标记逻辑：**
 用户在标记第一张图的时候，需要首先标记时间起始点，假设起始点的x坐标为 $x_{start}$ 与 $x_{end}$ 标记区域的起始点为 $x$ 与 $x'$ 起始时间为 $t_{start}$ 与 $t_end$ ，则时间按以下公式读取：
 ```math
-t\ =\frac{t_end-t_start}{x_end-x_start}\left( x-x_start \right)
+t\ =\frac{t_{end}-t_{start}}{x_{end}-x_{start}}\left( x-x_{start} \right)
 ```
 ```math
-t'=\frac{t_end-t_start}{x_end-x_start}\left( x'-x_start \right)
+t'=\frac{t_{end}-t_{start}}{x_{end}-x_{start}}\left( x'-x_{start} \right)
 ```
 最后时间信息按照格式`yyyy.mm.dd.HH.MM.SS.sss:yyyy.mm.dd.HH.MM.SS.sss`为一行保存在结果文件夹中的`time_info.txt`中其中SS与sss分别代表秒与毫秒
 
